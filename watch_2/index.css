@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #313131;
+    font-size: 16px;
+}
+
+
+/* ********** Nav bar styling ********************* */
+
+#logo {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 0;
+    transition: all 0.3s ease-out;
+}
+
+#logo_mob {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+#logo:hover {
+    color: #FC5D01;
+    cursor: pointer;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    height: 7vh;
+}
+
+.pos-f-t {
+    display: none;
+}
+
+.nav_bt a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #313131;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.nav_bt a:last-child {
+    margin-top: 5rem;
+}
+
+.nav_ul {
+    display: flex;
+    list-style-type: none;
+    width: 35%;
+    justify-content:space-between;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.nav_ul li a {
+    color: #313131;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.nav_ul li a:hover {
+    color: #FC5D01;
+    cursor: pointer;
+}
+
+.blu_btn {
+    background-color: #4091FF;
+    border: 1px solid #4091FF;
+    border-radius: 50px;
+    color: #FFF;
+    padding: 0.3rem 1rem;
+    font-size: 1.2rem;
+}
+
+.blu_btn:hover {
+    cursor: pointer;
+}
+
+/* ****************************************************************************************** */
+/* ***************************** Header content ********************************************* */
+
+#header_content {
+    display: flex;
+    align-items: center;
+    background-color:#F5F5F5;
+    height: 99vh;
+    width: 100%;
+    padding-bottom:1rem;
+}
+
+#watch_photo_header {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+#watchPro_top {
+    width: 300px;
+    transition: all 0.3s ease;
+    animation: rightToleft 0.3s linear forwards;
+}
+
+#watchPro_top:hover {
+    position: relative;
+    width: 380px;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+#watchPro_top:hover + img {
+    position: relative;
+    width: 300px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+#watch_top {
+    position: relative;
+    width: 350px;
+    margin-left: -115px;
+    z-index: 1;
+    transition: all 0.3s ease;
+    animation: rightToleft 0.3s linear forwards;
+}
+
+
+
+#header_content_slogan h1 span:first-child{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+#header_content_slogan h1 span:last-child {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+#header_content_slogan h1 {
+    margin-bottom: 1rem;
+    animation: leftToRight 0.3s linear forwards;
+}
+
+#header_content_slogan p {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    margin-bottom: 4rem;
+    animation: leftToRight 0.4s linear forwards;
+}
+
+#header_content  h2{
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+.blk_btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #313131;
+    font-size: 1.5rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+}
+
+.blk_btn:hover {
+    background-color: #FC5D01;
+    color: #313131;
+}
+
+#header_content_slogan a {
+    animation: leftToRight 0.4s linear forwards;
+}
+
+@keyframes leftToRight {
+    from {
+        transform: translate(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes rightToleft {
+    from {
+        transform: translate(-400px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+/* **************************************************************************** */
+
+/* ****************************** intro video ******************************************* */
+
+#video {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video video {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* **************************************************************************** */
+
+/* ***************** Google apps services section **************************** */
+
+#google {
+    display: flex;
+    background-color:#F3F4F6;
+    padding: 4rem 6rem;
+    padding-right: 0;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#google_watch {
+    height: 140%;
+    padding-left: 80px;
+    margin-right: -100px;
+    margin-top: -100px;
+}
+
+#os {
+    width: 20%;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    animation: popup 0.3s linear forwards;
+}
+
+.card {
+    padding-left: 2.3rem;
+    background-color:#FFF;
+    border-radius: 20px;
+    color: #313131;
+    box-shadow: 3px 3px 8px #999999;
+}
+#cardnum {
+    padding-left:5.5rem;
+    padding-bottom: 2rem;
+    border-radius: 20px;
+}
+#cardnum h5{
+    padding-top: 1rem;
+}
+
+#cardnum cl {
+    padding-bottom:3rem;
+}
+.mb-3{
+    padding-left:5.5rem;
+    font-weight: bold;
+ }
+ .btn{
+     padding-left: 5.5rem;
+ }
+#os img {
+    width: 90%;
+    margin-bottom: 4rem;
+}
+
+#os h3 {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.os_mobile {
+    display: none;
+}
+
+#apps {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
+#apps .card:first-child {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    transform: translate(0);
+    animation: popup 0.3s linear 0.1s forwards;
+}
+
+#apps .card:first-child img {
+    width:  60%;
+}
+
+#apps .card:first-child h3 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+#apps .card:last-child {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    transform: translate(0);
+    animation: popup 0.3s linear 0.15s forwards;
+}
+
+#apps .card:last-child h3 {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}   
+
+#app_icons {
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#app_icons img {
+    width: 40px;
+}
+
+#app_icons img:first-child {
+    width: 70px;
+    margin-right: -15px;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* *********************************************************************************** */
+/*    *************************** Battry life **************************************** */
+
+#battry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+#battry h4:first-child {
+    font-size: 4rem;
+    
+}
+
+.gradient {
+    font-size: 6rem;
+    margin-top: 4rem;
+    background: -webkit-linear-gradient(45deg, #FF4297, #FF9584);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.battry_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 14rem;
+}
+
+.battry_container_para {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #7A7A7A;
+}
+
+.battry_container_para p:first-child {
+    margin-bottom: 3rem;
+}
+
+.battry_container img {
+    width: 40%;
+}
+
+/* ********************************************************************************************* */
+/* ********************************  VALLENCIA APP ********************************************* */
+
+#watch_app {
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+    background-color: #F5F5F5;
+}
+
+.app_imgs {
+    display: flex;
+    padding: 0 2rem
+}
+
+.app_imgs img:first-child {
+    display: block;
+    width: 350px;
+    margin-top: 180px;
+    margin-bottom: -180px;
+}
+
+.app_imgs img:last-child {
+    display: block;
+    width: 380px;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    margin-left: -170px;
+}
+
+.watch_app_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-right: 3rem;
+}
+
+.watch_app_details h3 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.watch_app_details h3 span {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 4.6rem;
+    font-weight: 500;
+}
+
+.watch_app_details p{
+    font-size: 1.3rem;
+    margin-left: 0.3rem;
+}
+
+.watch_app_details h4 {
+    font-size: 2rem;
+    margin-top: 4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.watch_app_details p:last-child {
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.watch_app_details p:last-child span {
+    color: #FC5D01;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+/* ********************************************************************************************* */
+/* *********************** Health ************************************************************** */
+
+#health {
+    padding: 6rem 8rem;
+}
+
+.workout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.workout div:first-child {
+    width: 50%;
+}
+
+#health_desktop {
+    font-size: 7rem;
+    font-weight: 50;
+    margin-left: 4rem;
+    margin-bottom: 6rem;
+}
+
+#health_mobile {
+    display: none;
+}
+
+.workout h4 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.workout p {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+
+.workout_img {
+    display: flex;
+    background-image: url(./assets/workout.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 28rem;
+    height: 28rem;
+}
+
+.motion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rem;
+    padding: 0 3rem;
+}
+
+.motion img {
+    width: 350px;
+}
+
+.motion div {
+    width: 50%;
+}
+
+.motion div h3 {
+    font-size: 3rem
+}
+
+.motion div p {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+}
+
+/* ******************************************************************************************** */
+/* ************************ Footer ******************************************************* */
+
+#footer {
+    padding: 2rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+}
+
+#footer div p:first-child {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+#footer div:first-child p:first-child span {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 500;
+}
+.para{
+    padding-top: 6rem;
+}
+.para h1{
+    text-align: center;
+    background-color:cadetblue;
+    padding-right: 2rem;
+    padding-top: 0.8rem;
+}
+.para p{
+   padding-left:1.5rem
+
+}
+.para span
+{
+    font-weight: bold;
+   
+}
+.list-group{
+    padding-top: 1.5rem;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 1rem;
+}
+.customer{
+    padding-top: 3.5rem;
+    padding-left: 1.5rem;
+}
+.end{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+ 
+@media only screen and (max-width: 1200px) {
+    #navbar {
+        display: none;
+    }
+
+    .pos-f-t {
+        display: block;
+    }
+
+    #header_content {
+        height: 80vh;
+    }
+
+    #watchPro_top {
+        width: 200px;
+    }
+
+    #watchPro_top:hover {
+        width: 250px;
+    }
+
+    #watchPro_top:hover + img {
+        width: 200px;
+    }
+
+    #watch_top {
+        width: 230px;
+    }
+
+    #header_content_slogan h1 span:first-child {
+        font-size: 3rem;
+    }
+
+    #header_content_slogan h1 span:last-child {
+        font-size: 2.5rem;
+    }
+
+    #header_content_slogan p {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    #tech_specs h3{
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+    #tech_specs li{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    #header_content {
+        height: auto;
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+
+    #header_content_slogan h1 span:first-child {
+        font-size: 2.5rem;
+    }
+
+    #header_content_slogan h1 span:last-child {
+        font-size: 2rem;
+    }
+
+    #header_content_slogan p {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+
+    #watch_photo_header {
+        margin-bottom: 3rem;
+        margin-left: 0;
+    }
+
+    #header_content_slogan {
+        text-align: center;
+        margin: auto;
+    }
+
+    #tech_specs h3{
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    #tech_specs li{
+        font-size: 1rem;
+    }
+
+    #customer_reviews {
+        height: 4vh;
+        flex-direction: column;
+        padding: 4rem 0;
+    }
+
+}

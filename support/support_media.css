@@ -1,0 +1,117 @@
+/* ***************************** Nav bar styling ******************************************** */
+
+@media only screen and (max-width: 1200px) {
+    #navbar {
+        display: none;
+    }
+
+    .pos-f-t {
+        display: block;
+    }
+}
+
+/* ****************************************************************************************** */
+
+/* ***************************** Header content ********************************************* */
+
+@media only screen and (max-width: 1100px) {
+
+    .img {
+        height: auto;
+    }
+
+    .img h3 {
+        font-size: 2.6rem;
+    }
+
+    #header {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .call {
+        width: 100%;
+    }
+
+    .SMS {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .img h2 {
+        font-size: 1.6rem;
+    }
+
+    .img h3 {
+        font-size: 2rem;
+    }
+
+    .img p {
+        font-size: 1rem;
+    }
+
+    .call h4 {
+        font-size: 2rem;
+    }
+
+    .phonenumber {
+        width: 60%;
+    }
+
+    .comment_box {
+        width: 80%;
+    }
+
+}
+
+/* ******************************************************************************************** */
+/* ************************ Find us and get in tuch ******************************************************* */
+
+@media only screen and (max-width: 1200px) {
+
+    #body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Find_Us {
+        width: 100%;
+        height: auto;
+        padding: 4rem 0;
+    }
+
+    .G_I_T {
+        width: 100%;
+        height: auto;
+        padding: 4rem 0;
+    }
+
+}
+
+
+
+
+
+
+/* ******************************************************************************************** */
+/* ************************ Footer ******************************************************* */
+
+@media only screen and (max-width: 750px) {
+
+    #footer {
+        padding: 1rem;
+    }
+
+    #footer div p:first-child {
+        font-size: 0.8rem;
+    }
+
+    #footer address, #footer a {
+        font-size: 0.7rem;
+    }
+
+}

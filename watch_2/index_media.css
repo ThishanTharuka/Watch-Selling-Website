@@ -1,0 +1,389 @@
+/* ***************************** Nav bar styling ******************************************** */
+
+@media only screen and (max-width: 1200px) {
+    #navbar {
+        display: none;
+    }
+
+    .pos-f-t {
+        display: block;
+    }
+}
+
+/* ****************************************************************************************** */
+
+/* ***************************** Header content ********************************************* */
+
+@media only screen and (max-width: 1200px) {
+
+    #header_content {
+        height: 80vh;
+    }
+
+    #watchPro_top {
+        width: 200px;
+    }
+
+    #watchPro_top:hover {
+        width: 250px;
+    }
+    
+    #watchPro_top:hover + img {
+        width: 200px;
+    }
+
+    #watch_top {
+        width: 230px;
+    }
+
+    #header_content_slogan h1 span:first-child {
+        font-size: 3rem;
+    }
+
+    #header_content_slogan h1 span:last-child {
+        font-size: 2.5rem;
+    }
+
+    #header_content_slogan p {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+  }
+
+@media only screen and (max-width: 850px) {
+
+    #header_content {
+        height: auto;
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+
+    #header_content_slogan h1 span:first-child {
+        font-size: 2.5rem;
+    }
+
+    #header_content_slogan h1 span:last-child {
+        font-size: 2rem;
+    }
+
+    #header_content_slogan p {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+
+    #watch_photo_header {
+        margin-bottom: 3rem;
+        margin-left: 0;
+    }
+
+    #header_content_slogan {
+        text-align: center;
+        margin: auto;
+    }
+}
+
+/* **************************************************************************** */
+
+/* ****************************** intro video ******************************************* */
+
+@media only screen and (max-width: 970px) {
+    #video {
+        height: auto;
+    }
+}
+
+/* **************************************************************************** */
+
+/* ***************** Google apps services section **************************** */
+
+@media only screen and (max-width: 1390px) {
+
+
+    #os {
+        width: 15%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #os img {
+        width: 70%;
+    }    
+
+    #os h3 {
+        font-size: 1.5rem;
+    }
+
+    .blk_btn {
+        font-size: 1rem;
+    }
+
+    #apps {
+        width: 40%;
+    }
+
+    #apps .card:last-child h3 {
+        font-size: 1.2rem;
+    }
+
+    #google_watch {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    #google {
+        flex-direction: column;
+        height: auto;
+        padding: 4rem 0;
+        padding-bottom: 0;
+        align-items: center;
+    }
+
+    #os, #apps {
+        width: 90%;
+        margin: 0;
+    }
+
+    #os {
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #os img {
+        width: 50%;
+        margin-bottom: 2.5rem;
+    }
+
+    .os_deckstop {
+        display: none;
+    }
+
+    .os_mobile {
+        display: block;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    #app_icons {
+        width: 100%;
+    }
+
+    #apps .card:first-child {
+        margin-bottom: 2rem;
+    }
+
+    #google_watch {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* *********************************************************************************** */
+/*    *************************** Battry life **************************************** */
+
+@media only screen and (max-width: 1430px) {
+    .battry_container img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .battry_container img {
+        display: none;
+    }
+
+    #battry h4:first-child {
+        font-size: 2.5rem;
+        
+    }
+
+    .gradient {
+        font-size: 4.5rem;
+    }    
+
+    .battry_container {
+        margin: 3rem 2rem;
+    }
+
+    .battry_container_para {
+        font-size: 1.5rem;
+        width: 180%;
+    }    
+
+    @media only screen and (max-width: 850px) {
+
+        .battry_container_para{
+            font-size: 1.3rem
+        }
+
+    }
+}
+
+/* ********************************************************************************************* */
+
+/* ********************************  VALLENCIA APP ********************************************* */
+
+@media only screen and (max-width: 1430px) {
+
+    .app_imgs img:first-child {
+        width: 250px;
+    }
+    
+    .app_imgs img:last-child {
+        width: 280px;
+    }
+
+    .watch_app_details h3 {
+        font-size: 3rem;
+    }
+
+    .watch_app_details h3 span {
+        font-size: 3.5rem
+    }
+
+    .watch_app_details p {
+        font-size: 1rem
+    }
+
+    .watch_app_details h4 {
+        font-size: 1.6rem
+    }
+
+    .watch_app_details p:last-child {
+        font-size: 2rem;
+    }
+
+    .watch_app_details p:last-child span {
+        font-size: 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 1070px) {
+
+    #watch_app {
+        flex-direction: column-reverse;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        padding-top: 3rem;
+    }
+
+    .app_imgs img:first-child {
+        width: 300px;
+    }
+    
+    .app_imgs img:last-child {
+        width: 350px;
+    }
+
+    .watch_app_details {
+        max-width: 800px;
+    }
+
+}
+
+/* ********************************************************************************************* */
+
+/* *********************** Health ************************************************************** */
+
+@media only screen and (max-width: 1330px) {
+
+    #health_desktop {
+        font-size: 5rem;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    .workout {
+        flex-direction: column;
+    }
+
+    .workout div:first-child {
+        width: 100%;
+    }
+
+    #health_desktop {
+        display: none;
+    }
+
+    #health_mobile {
+        display: block;
+        font-size: 5rem;
+        font-weight: 50;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    .workout_img {
+        border-radius: 0;    
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .motion div h3 {
+        font-size: 2.6rem;
+    }
+
+    .motion {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+    }
+
+    .motion div {
+        width: 100%;
+    }
+
+    .motion div p {
+        margin-bottom: 4rem;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+
+    #health_mobile {
+        font-size: 3rem;
+    }
+
+    .workout h4, .motion div h3 {
+        font-size: 2rem;
+    }
+
+    #health {
+        padding: 3rem 2rem;
+    }
+
+    .motion div p {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* ******************************************************************************************** */
+/* ************************ Footer ******************************************************* */
+
+@media only screen and (max-width: 750px) {
+
+    #footer {
+        padding: 1rem;
+    }
+
+    #footer div p:first-child {
+        font-size: 0.8rem;
+    }
+
+    #footer address, #footer a {
+        font-size: 0.7rem;
+    }
+
+}

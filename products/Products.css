@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #313131;
+    font-size: 16px;
+}
+
+
+/* ********** Nav bar styling ********************* */
+
+#logo {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 0;
+    transition: all 0.3s ease-out;
+}
+
+#logo_mob {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+#logo:hover {
+    color: #FC5D01;
+    cursor: pointer;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    height: 7vh;
+}
+
+.pos-f-t {
+    display: none;
+}
+
+.nav_bt a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #313131;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.nav_bt a:last-child {
+    margin-top: 5rem;
+}
+
+.nav_ul {
+    display: flex;
+    list-style-type: none;
+    width: 35%;
+    justify-content:space-between;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.nav_ul li a {
+    color: #313131;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.nav_ul li a:hover {
+    color: #FC5D01;
+    cursor: pointer;
+}
+
+.blu_btn {
+    background-color: #4091FF;
+    border: 1px solid #4091FF;
+    border-radius: 50px;
+    color: #FFF;
+    padding: 0.3rem 1rem;
+    font-size: 1.2rem;
+}
+
+.blu_btn:hover {
+    cursor: pointer;
+}
+
+/*Products here*/
+#container  {
+    height: auto;
+    width: auto;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 25px;
+}
+
+#box1  {
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    background-color: white;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-block;
+}
+
+#box2  {
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    background-color: white;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-block;
+}
+
+#typ1    {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    opacity: 75%;
+    background-color:#F5F5F5 ;
+}
+
+#typ2    {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    opacity: 75%;
+}
+
+#typ:hover    {
+    opacity: 90%;
+}
+
+#productname    {
+    position: relative;
+    padding-top: 20px;
+    font-family: 'Frank Ruhl Libre', serif;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+#price  {
+    position: relative;
+    padding-left: 30px;
+    font-family: 'Frank Ruhl Libre', serif;
+    text-align: left;
+    font-size: 45px; 
+}
+
+.return {
+    font-size: 12px;
+}
+
+.pimg   {
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    display: flex;
+}
+
+/*button*/
+.button {
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #4091FF;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    width: 175px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left:20%;
+    margin-bottom:20px;
+}
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/*contents*/
+
+#container2 {
+    height: auto;
+    width: auto;
+    background-color: #ffffff;
+    color: black;
+    margin-left:7%;
+    margin-right:5%;
+    display: flex;
+}
+
+#box  {
+    width: auto;
+    height: auto;
+    background-color: white;
+    left: 150px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-block;
+}
+
+.cimg1   {
+    width: 220px;
+    height:auto;
+
+}
+
+.cimg2   {
+    width: 380px;
+    height:auto;
+}
+
+.cimg3   {
+    width: 350px;
+    height:auto;
+    padding-right: 1px;
+}
+
+.cimg1box   {
+    display: inline-block;
+    width: 380px;
+    height: auto;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.cimg2box   {
+    display: inline-block;
+    width: 380px;
+    height: auto;
+    text-align: center;
+}
+
+.cimg3box   {
+    display: inline-block;
+    width: 380px;
+    height: auto;
+    margin-left: 5%;
+    text-align: center;
+}
+
+#ctext1 {
+    left: 50px;
+    top: 100px;
+    position: relative;
+}
+
+#box3    {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-block;
+    overflow: hidden;
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+
+#box4    {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-block;
+    overflow: hidden;
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+#box5    {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: inline-block;
+    overflow: hidden;
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.limg1  {
+    width: auto;
+    height: 150px;
+
+}
+
+.limg2  {
+    width: auto;
+    height: 150px;
+
+
+}
+
+.limg3  {
+    width: auto;
+    height: 150px;
+}
+
+.text1 {
+    font-size: 12px;
+    text-align: center;
+    padding: 0 5px 0 5px;
+}
+
+.text2 {
+    font-size: 12px;
+    text-align: center;
+}
+.ltext1 {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.ltext2 {
+    text-align: center;
+}
+
+.ltext3 {
+    text-align: center;
+}
+
+#container3 {
+    height: auto;
+    width: auto;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 25px 25px;
+
+}
+/* ************************ Footer ******************************************************* */
+
+#footer {
+    padding: 2rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+}
+
+#footer div p:first-child {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+#footer div:first-child p:first-child span {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 500;
+}
